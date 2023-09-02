@@ -4,7 +4,6 @@
   height: 100%;
 }
 
-
 .own-name {
   font-size: 140%;
   opacity: 80%;
@@ -21,23 +20,20 @@
 }
 
 .own-descriptions {
-
   flex: 1 1;
 
   & .own-description-item {
-
+    text-align: justify;
+    text-indent: 0.5em;
   }
-
 }
 
 .own-info {
-
   padding: 1.5em;
   display: flex;
   flex-direction: column;
 
   & .own-info-item {
-
     display: flex;
     flex-direction: row;
 
@@ -48,7 +44,5 @@
     & .own-info-item-value {
       flex: 1 1;
     }
-
   }
-
 }

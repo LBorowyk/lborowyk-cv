@@ -1,6 +1,5 @@
 .content {
   text-align: justify;
-  line-height: 1.2em;
 
   & .company-label {
     font-weight: 600;
@@ -12,7 +11,7 @@
     margin-bottom: 0.4em;
   }
 
-  & .content {
-  }
-
+  // & .data {
+  //   line-height: 1.1em;
+  // }
 }

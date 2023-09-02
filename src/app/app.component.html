@@ -2,25 +2,31 @@
 <div *ngIf="dataService.item | async as item" class="page">
   <info-panel [item]="item" class="left-bar"></info-panel>
   <div class="content">
-    <history-event-panel [historyItems]="item.workPlaces" header="Досвід роботи"
-                         [getDescription]="getWorkDescription">
+    <history-event-panel
+      [historyItems]="item.workPlaces"
+      header="Досвід роботи"
+      [getDescription]="getWorkDescription"
+    >
       <ng-template historyEventItem let-historyItem>
-        <ul>
-          <li *ngFor="let row of historyItem?.descriptions">{{row}}</li>
-        </ul>
+        <div class="list" *ngFor="let row of historyItem?.descriptions">
+          ⇒{{ row }}
+        </div>
       </ng-template>
     </history-event-panel>
-    <history-event-panel [historyItems]="item.studyPlaces" header="Освіта"
-                         [getDescription]="getEducationDescription">
+    <history-event-panel
+      [historyItems]="item.studyPlaces"
+      header="Освіта"
+      [getDescription]="getEducationDescription"
+    >
       <ng-template historyEventItem let-historyItem>
-<!--        {{historyItem.department}},-->
-        спецільність «{{historyItem.specialization}}»
+        <!--        {{historyItem.department}},-->
+        спецільність «{{ historyItem.specialization }}»
       </ng-template>
     </history-event-panel>
     <section-panel header="Стек">
       <ng-template sectionPanelContent>
         <div>
-          {{item.keyWords.join(', ')}}
+          {{ item.keyWords.join(', ') }}
         </div>
       </ng-template>
     </section-panel>

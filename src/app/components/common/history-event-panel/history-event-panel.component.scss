@@ -1,22 +1,39 @@
 .history-item {
+  text-align: justify;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 0.6em;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 1em;
 
+  & .history-data {
+    display: flex;
+    justify-content: space-between;
 
-  & .duration {
-    width: 10em;
+    & .duration {
+      width: 10em;
 
-    & .duration-label {
-      display: inline-block;
-      white-space: nowrap;
-      font-weight: 600;
-      border-bottom: 2px solid dimgray;
-      opacity: 80%;
+      & .duration-label {
+        display: inline-block;
+        white-space: nowrap;
+        font-weight: 600;
+        border-bottom: 2px solid dimgray;
+        opacity: 80%;
+      }
+    }
+
+    & .content {
+      flex: 1 1;
     }
   }
 
-  & .content {
-    flex: 1 1;
+  & .history-content {
+    padding: 0em 0.5em;
+    margin-left: 1em;
+    text-indent: -1em;
+    line-height: 1.2em;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #512e5f;
   }
 }
