@@ -1,0 +1,8 @@
+<div class="section box">
+  <div class="caption">
+    {{header}}
+  </div>
+  <div *ngIf="!!sectionContentTemplate" class="section-content">
+    <ng-container [ngTemplateOutlet]="sectionContentTemplate.template"></ng-container>
+  </div>
+</div>

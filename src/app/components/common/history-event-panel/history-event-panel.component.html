@@ -1,0 +1,16 @@
+<section-panel [header]="header">
+  <ng-template sectionPanelContent>
+    <div *ngFor="let item of historyItems" class="history-item">
+      <div class="duration">
+        <div class="duration-label">
+        {{item.start}} — {{item.end}}
+        </div>
+      </div>
+      <div *ngIf="!!historyItemTemplate" class="content">
+        <company-name [companyName]="item.company" [description]="getDescription(item)">
+          <ng-container [ngTemplateOutlet]="historyItemTemplate.template" [ngTemplateOutletContext]="{$implicit: item}"></ng-container>
+        </company-name>
+      </div>
+    </div>
+  </ng-template>
+</section-panel>

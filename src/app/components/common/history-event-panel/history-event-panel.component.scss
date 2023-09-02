@@ -1,0 +1,22 @@
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.6em;
+
+
+  & .duration {
+    width: 10em;
+
+    & .duration-label {
+      display: inline-block;
+      white-space: nowrap;
+      font-weight: 600;
+      border-bottom: 2px solid dimgray;
+      opacity: 80%;
+    }
+  }
+
+  & .content {
+    flex: 1 1;
+  }
+}

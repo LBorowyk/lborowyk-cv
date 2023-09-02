@@ -1,0 +1,54 @@
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.own-name {
+  font-size: 140%;
+  opacity: 80%;
+  font-weight: bold;
+  padding-top: 1em;
+  text-align: center;
+}
+
+.own-rank {
+  font-size: 110%;
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: center;
+}
+
+.own-descriptions {
+
+  flex: 1 1;
+
+  & .own-description-item {
+
+  }
+
+}
+
+.own-info {
+
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+
+  & .own-info-item {
+
+    display: flex;
+    flex-direction: row;
+
+    & .own-info-item-icon {
+      width: 2.5em;
+    }
+
+    & .own-info-item-value {
+      flex: 1 1;
+    }
+
+  }
+
+}

@@ -1,0 +1,31 @@
+<div class="box info-panel">
+  <div class="photo"></div>
+  <ng-container *ngIf="item">
+    <div class="own-name">
+      {{item.firstName}} {{item.lastName}}
+    </div>
+    <div class="own-rank">
+      {{item.rank}}
+    </div>
+    <div class="own-descriptions">
+      <div *ngFor="let descriptionItem of item.descriptions" class="own-description-item">
+        {{descriptionItem}}
+      </div>
+    </div>
+    <div class="own-info">
+      <div class="own-info-item" *ngFor="let infoItem of [
+        {value: item.phone, icon: 'bi bi-telephone'},
+        {value: item.email, icon: 'bi bi-envelope-at'},
+        {value: item.address, icon: 'bi bi-house'},
+      ]">
+        <div class="own-info-item-icon">
+          <i class="{{infoItem.icon}}"></i>
+        </div>
+        <div class="own-info-item-value">
+          {{infoItem.value}}
+        </div>
+      </div>
+    </div>
+
+  </ng-container>
+</div>

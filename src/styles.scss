@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+.page {
+  width: 21cm;
+  height: 29.7cm;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid;
+  size: 21cm 29.7cm;
+  display: flex;
+  //align-content: stretch;
+  font-size: 12pt;
+  color: dimgray;
+}
+
+.left-bar {
+  width: 30%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.full-size-block {
+  flex: 1 1;
+}
+
+.photo {
+  background-image: url('assets/images/icon.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+}
