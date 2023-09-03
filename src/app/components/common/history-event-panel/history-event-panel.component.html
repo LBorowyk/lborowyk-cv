@@ -2,15 +2,15 @@
   <ng-template sectionPanelContent>
     <div *ngFor="let item of historyItems" class="history-item">
       <div class="history-data">
-        <div class="duration">
-          <div class="duration-label">{{ item.start }} — {{ item.end }}</div>
-        </div>
         <div *ngIf="!!historyItemTemplate" class="content">
           <company-name
             [companyName]="item.company"
             [description]="getDescription(item)"
           >
           </company-name>
+        </div>
+        <div class="duration">
+          <div class="duration-label">{{ item.start }} — {{ item.end }}</div>
         </div>
       </div>
       <div class="history-content">
