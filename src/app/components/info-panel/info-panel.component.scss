@@ -5,7 +5,7 @@
 }
 
 .own-name {
-  font-size: 140%;
+  font-size: 150%;
   opacity: 80%;
   font-weight: bold;
   padding-top: 1em;
@@ -13,7 +13,7 @@
 }
 
 .own-rank {
-  font-size: 110%;
+  font-size: 130%;
   font-weight: bold;
   padding: 0.5em;
   text-align: center;
@@ -21,10 +21,12 @@
 
 .own-descriptions {
   flex: 1 1;
+  padding: 0.5em;
 
   & .own-description-item {
     text-align: justify;
-    text-indent: 0.5em;
+    text-indent: 1em;
+    font-size: 110%;
   }
 }
 
@@ -44,5 +46,13 @@
     & .own-info-item-value {
       flex: 1 1;
     }
+  }
+}
+
+.photo {
+  margin-left: auto;
+  margin-right: auto;
+  & img {
+    height: 280px;
   }
 }

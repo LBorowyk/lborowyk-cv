@@ -25,7 +25,6 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
-  // margin-left: 0.5em;
 }
 
 .full-size-block {
@@ -41,12 +40,19 @@
 }
 
 .list > p:not(:last-child):after {
-  // left: -3px;
-  // position: relative;
   content: ';';
 }
 .list > p:last-child:after {
-  // left: -3px;
-  // position: relative;
   content: '.';
+}
+
+.root-wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.toolbox {
+  @media print {
+    display: none;
+  }
 }
