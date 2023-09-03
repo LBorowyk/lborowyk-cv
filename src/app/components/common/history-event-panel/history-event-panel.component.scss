@@ -1,9 +1,10 @@
 .history-item {
-  text-align: justify;
+  // text-align: justify;
   display: flex;
   flex-direction: column;
   align-items: stretch;
   margin-bottom: 1em;
+  color: #512e5f;
 
   & .history-data {
     display: flex;
@@ -28,12 +29,12 @@
 
   & .history-content {
     padding: 0em 0.5em;
-    margin-left: 1em;
-    text-indent: -1em;
-    line-height: 1.2em;
+    margin-left: 1.2em;
+    text-indent: -1.2em;
+    // line-height: 1.2em;
   }
 
   &:not(:last-child) {
-    border-bottom: 1px solid #512e5f;
+    // border-bottom: 1px solid #512e5f;
   }
 }

@@ -9,7 +9,7 @@
     >
       <ng-template historyEventItem let-historyItem>
         <div class="list" *ngFor="let row of historyItem?.descriptions">
-          ⇒{{ row }}
+          <p>{{ row }}</p>
         </div>
       </ng-template>
     </history-event-panel>
